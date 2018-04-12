@@ -1,0 +1,885 @@
+﻿.scroll {
+    height: 100%;
+}
+
+.login, .beriNilai, .tabung, .daftarKerja, .frmInput, .frmInput2, .customModal, .settingBluetooth, .profile, .listAccount, .riwayat {
+    /*background-color: #000020;*/
+    background-image: url('../img/Background.png');
+    background-size:contain;
+}
+
+.pin-popup .popup {
+    background-color:#000020 !important;
+    border:1px solid white!important;
+    border-radius:10px !important;    
+}
+
+
+.pin-popup .popup-head{
+    background-color:transparent;
+    border-bottom:none;
+}
+
+.pin-popup .popup-head h3 {
+        color:white !important;
+    }
+
+.ok-popup .popup {
+background-image: url('../img/notif.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-color:transparent;
+    
+}
+
+.ok-popup .popup-head{
+    border-bottom:none;
+}
+.ok-popup .popup-body {
+    color:#009344;
+    text-align:center;
+    font-size:14px;
+    padding-top:20px;
+    padding-bottom:0;
+
+}
+
+.ok-popup .popup-buttons {
+    width:60%;
+    margin: 0 auto;
+    padding:20px;
+    
+}
+
+.ok-popup .popup-buttons .button{
+    background-color:#009344;
+    color:white;
+    border-radius:15px;
+    border:solid 5px;
+    
+}
+
+.ads-popup .popup {
+    height:100%;
+    width:100%;
+    background-color:rgba(72,72,72,0.9);
+    max-height:100%;
+}
+
+.ads-popup .popup-head{
+    border:none;
+}
+
+.ads-popup img{
+    width:90%;
+    position:absolute;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+}
+
+.ads-popup button{
+     color:white;
+     position:absolute;
+     background-color:transparent;
+    right:10px;
+    top:10px;
+}
+
+.headerjudul{
+    background-color: #f05a28;
+    color: white;
+    background-size: 100% 0px;
+}
+
+.headerjudul p{
+    font-size: 17px;
+    margin: auto;
+}
+
+.top-sidemenu {
+    background-color:#f05a28;
+    color:white;
+}
+
+.bar-positive {
+    background-color:#f05a28 !important;
+    border:none;
+}
+/*-----Side Menu-------*/
+
+.sideprofile{
+    /*height: 25%;*/
+    background:linear-gradient(to right,#ea9122,#ec6823);
+    /*background: linear-gradient(to left,#105e6b,#35b4b9);*/
+    padding-top: 20px;
+    padding-bottom: 15px;
+    /*border-bottom: white solid 1px;*/
+    text-align:center;
+}
+
+.fotoprofile img{
+    border-radius: 100%;
+}
+
+.fotoprofile, .infoprofile{
+    text-align: center;
+}
+
+.infoprofile .namaprofile{
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+
+.infoprofile{
+    margin-top: 3px;
+}
+
+.sidemenucontent {     
+    background:linear-gradient(to right,#ea9122,#ec6823);
+     /*background: linear-gradient(to bottom left,#105e6b,#35b4b9);*/
+}
+
+/* garis side menu transparan*/
+ .sidemenu .item-complex .item-content{
+   background-color: transparent;
+}
+
+.sidemenu .item{
+    background-color: #087280;
+    color: white;
+    border-color: #ec6823;
+    border-bottom-width:3px;
+}
+
+.sidemenu .item:active{
+    background-color: #ec6823;
+    color: white;
+    border-color: transparent;
+}
+
+.item-icon-left .icon{ /*---> merubah ukuran icon di list sidemenu*/
+    font-size:30px;
+}
+
+/*----------------Edit profile---------------*/
+.profile {
+    text-align:center;
+}
+
+/*.profile a, .profile button {
+    background-color:transparent;
+    border:1px solid white; 
+    border-radius:8px;
+    width:70%;
+    margin-top:10px;
+    margin-left:5px;
+    color:white;
+}*/
+
+.profile div>div:nth-child(1) img{
+    margin-top:5%;
+    border-radius:100%;
+    width:150px;
+}
+
+.profile div:nth-child(2){
+    width:100%;    
+}
+
+.profile div:nth-child(2) a{
+    border: none;
+    font-style: italic;
+    font-size:larger;
+    color:#087280; 
+    font-weight:bold;
+}
+
+.profile div:nth-child(3){
+    margin-top:10%;
+    background-color:#087280;
+}
+
+.profile div:nth-child(3) label{
+    border:none;
+    background-color:transparent;
+     padding-right:10px;
+    padding-left:10px;
+    color:white;
+    width:100%;
+    font-size:larger;
+}
+
+.profile div:nth-child(3) label img:nth-child(1){
+    width:16%;
+    padding-left:25px;
+    
+}
+
+.profile div:nth-child(3) .img2{
+    width:16%;
+    padding-right:25px;
+    
+}
+
+.profile div:nth-child(4){
+    margin-top:10%;
+}
+
+.profile div:nth-child(4) a {   
+    width:85%;    
+    border-radius:10px;
+    border-width:2px;
+    margin-top: 5%;
+    background-color:#A7DCDF;
+    color:#087280;    
+    min-height:40px;
+    font-size:large;
+    border-color:white;
+    text-align:left;
+    padding-left:30px;
+    padding-right:30px;
+}
+/* ------------------ List Account -------------------- */
+.listAccount ion-item{
+    background-color:transparent;
+    border:none;
+}
+.listAccount ion-item div{
+    vertical-align:top;
+}
+
+.listAccount .edit-delete {  
+   margin-right:70px;
+}
+
+.listAccount .edit-delete button{
+   background-color:#087280;
+   color:white;
+   width:50%;
+   text-align:center;
+   font-size:16px;
+   margin-bottom:10px;
+   border:none;
+  
+}
+.listAccount .edit-delete button:nth-child(1) {
+ border-right:solid 2px #35b4b9;
+}
+
+.listAccount ion-item div div:nth-child(1){
+   display:inline-table;
+   width:25%;
+   text-align:center;
+}
+
+.listAccount ion-item div div:nth-child(2){
+    display:inline-table;
+    padding-left:10px;
+}
+
+.imgOrtu{
+    width:100%;    
+}
+
+.imgAnak{
+    width:50%;    
+}
+
+.listAccount h2{
+   color:#087280;
+   font-size:18px;
+}
+
+.listAccount h3{
+   color:#087280;
+}
+
+.listAccount h2:nth-child(2){
+   font-weight:bold;
+}
+
+.listAccount .item-divider{
+background: linear-gradient(to right,#087280,#35b4b9);
+color:white;
+font-size:20px;
+margin-right:50px;
+border:none;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.listAccount .item-divider:nth-child(1) {
+margin-top:20px;
+}
+
+.listAccount ion-item div.item-content {
+    background-color:#A7DCDF;
+    margin-right:70px;
+}
+
+.addAcc{
+position:absolute;
+height:0; 
+}
+
+.addAcc img {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    width:20%;
+}
+
+
+/* ------------------ login -------------------- */
+.footerbar{
+    background-color:transparent;
+    background-image: none;
+    border:none;
+    font-size: 17px;
+}
+
+.footerbar p{
+    color: white;
+    text-align: center;
+    margin: auto;
+    color:#A7DCDF;
+}
+
+.login {
+    overflow:hidden;
+}
+.login div div:nth-child(1){
+    padding-top:7%;
+    text-align: center;
+    height:30%;
+}
+
+.login div:nth-child(1) img{
+    width: 40%;
+}
+
+.login div:nth-child(2){
+     margin-top: 10%; 
+     background-color:#087280;
+    margin-left:20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    height:65%;
+}
+
+.login div:nth-child(2) label{
+    width: 85%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    border-bottom:solid 1px;
+    border-color:#31B6BA;
+    background-color:transparent;
+}
+
+.login div:nth-child(2) label img {
+    width:90%;
+}
+
+.login div:nth-child(2) input{
+    text-align: center;
+    color:#A7DCDF;
+    font-size:larger;
+
+}
+
+.login div:nth-child(2) input::-webkit-input-placeholder {
+    color: #A7DCDF;
+    font-style:italic;
+}
+
+.login div:nth-child(2) p {
+    text-align: center;
+    color: #A7DCDF;
+    font-size: 13px;
+    font-style: italic;
+     margin-top:20px; 
+     font-size:large;
+}
+
+.login table {
+    margin: 0 auto;
+    width:80%;
+    text-align:center;
+
+}
+
+.login td{
+    width:50%;
+}
+
+.login button{
+    border:none;
+    width:95%;    
+    border-radius:10px;
+    border-width:2px;
+    margin-top: 5%;
+    background-color:#A7DCDF;
+    color:#087280;
+    font-weight:bold;
+    min-height:40px;
+}
+
+.login button:active,.login button:hover{
+     border:none;
+    background-color:#A6CE39;
+    color:white;
+}
+
+.login div:nth-child(2) p a {
+    color: #A7DCDF;
+    font-size:medium;
+}
+
+/* ------------------ CSS daftarKerja -------------------- */
+.listKerja ion-item img {
+    padding:10px;
+}
+
+.listKerja h2{
+    padding-top:10px;
+   color:white;
+   font-size:22px;
+}
+
+.listKerja  h3{
+   color:yellow;
+   font-size:22px;
+}
+
+.listKerja a:nth-child(5n-4){
+   background: linear-gradient(to right,#35b4b9,#105e6b);
+}
+
+.listKerja a:nth-child(5n-3){
+    background: linear-gradient(to right,#ec6823,#105e6b);
+}
+.listKerja a:nth-child(5n-2){
+   background: linear-gradient(to right,#ec6823,#ea9122);
+}
+.listKerja a:nth-child(5n-1){
+    background: linear-gradient(to right,#a6ce38,#ea9122);
+}
+.listKerja a:nth-child(5n){
+    background: linear-gradient(to right,#a6ce38,#35b4b9);
+}
+
+.background-image {
+    /* In this example we are using a background-image. But the header element could be anything. */
+    background-image: url('../img/parallax.jpg');
+    background-size: cover;
+    background-position: center;
+    /* The header must have a height: */
+    height: 50vw;
+}
+
+.content {
+	/* Content after the elastic header need a background-color to cover the elastic header. */
+	background-color: white;
+}
+
+.listKerja ion-item:nth-child(5n-4) div.item-content{ 
+    background: linear-gradient(to right,#35b4b9,#105e6b);
+}
+
+.listKerja ion-item:nth-child(5n-3) div.item-content{ 
+     background: linear-gradient(to right,#105e6b,#ec6823);
+}
+
+.listKerja ion-item:nth-child(5n-2) div.item-content{ 
+     background: linear-gradient(to right,#ec6823,#ea9122);
+}
+.listKerja ion-item:nth-child(5n-1) div.item-content{ 
+    background: linear-gradient(to right,#ea9122,#a6ce38);
+}
+
+.listKerja ion-item:nth-child(5n) div.item-content{ 
+   background: linear-gradient(to right,#a6ce38,#35b4b9);
+}
+
+.buttonAdd i.icon:before {
+    font-size: 80px;color:white;
+    
+}
+
+.buttonAdd{
+position:absolute;
+height:0; 
+background-color: transparent;
+}
+
+.buttonAdd i{
+top: auto;
+right: 20px;
+bottom: 20px;
+position: fixed;
+z-index: 100;
+}
+
+.listKerja-footer {
+    background-color:#087280;
+
+}
+
+.listKerja-footer a{
+    background-color:#087280;
+    width:100%;
+    color:white;
+    text-align:left;
+    font-size:20px !important;
+    
+}
+
+.ion-plus:before {
+    content: url('../img/tmbah-kerjaan-icon.png') !important;   
+} 
+
+.ion-archive:before {
+    content: url('../img/icon-riwayat.png') !important;   
+} 
+
+
+/* ------------------ Input form -------------------- */
+.frmInput {
+    padding:25px;
+}
+
+.frmInput label{
+color:white;
+font-size:medium;
+}
+
+.frmInput input{
+    background-color:transparent;
+    border:1px solid white;
+    padding:5px;
+    border-radius:8px;
+    width:100%;
+    margin:5px;
+    color:white;
+    margin-bottom:15px;
+}
+
+.frmInput a, .frmInput button {
+    background-color:transparent;
+    border:1px solid white; 
+    border-radius:8px;
+    width:40%;
+    color:white;
+    display: block; 
+    margin: 0 auto;
+    
+}
+
+.frmInput select {
+    background-color:transparent;
+    color:white;border:1px white solid;
+    border-radius:5px;
+    width:100%;
+    height:35px;
+    margin:5px;
+    margin-bottom:15px;
+}
+
+
+.frmInput2 div div{
+margin-left:20px;
+margin-right:20px;
+margin-top:20px;
+background-color:#087280;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+min-height:100%;
+padding-bottom:30px;
+opacity:0.8;
+}
+
+.frmInput2 label{
+    width: 85%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    border-bottom:solid 1px;
+    border-color:#31B6BA;
+    background-color:transparent;
+}
+
+.frmInput2 label label{
+    color:#A7DCDF;
+    margin-right:10px;
+    margin-left:5px;
+    border:none;
+    font-size:large;
+}
+
+.frmInput2 input{
+    color:#A7DCDF;
+    font-size:larger;
+    background-color:transparent;   
+}
+
+.frmInput2 span{
+    color:#A7DCDF;
+    font-size:large;
+    background-color:transparent;
+}
+
+.frmInput2 select{
+    color:#A7DCDF;
+    font-size:larger;
+    border:none;
+    width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat right center;
+}
+
+.frmInput2 div div div{
+margin-left:13%;
+}
+
+.frmInput2 div div div label{
+    color:#A7DCDF;
+    font-size:large;
+    border:none;  
+}
+
+.frmInput2 div div div img{
+    vertical-align:middle;
+    margin-left:20%;   
+}
+
+.frmInput2 input::-webkit-input-placeholder {
+    color: #A7DCDF;
+    font-style:italic;
+}
+
+.frmInput2 button {
+    width:50%;
+    display: block; 
+    margin: 0 auto;
+    border:none;  
+    border-radius:10px;
+    border-width:2px;
+    margin-top: 5%;
+    background-color:#A7DCDF;
+    color:#087280;
+    font-weight:bold;
+    min-height:40px;
+
+}
+
+.frmInput2 button:active,.frmInput2 button:hover{
+     border:none;
+    background-color:#A6CE39;
+    color:white;
+}
+
+.frmInput2 span>span {
+    color:#ffdc7d;
+}
+
+.frmInput2 table{
+    color:white;
+    font-size:larger;
+    width:85%;
+    margin: 0 auto;
+}
+
+.frmInput2 tr:nth-child(1){
+    border-bottom:solid 1px;
+    border-color:#31B6BA;
+}
+
+.frmInput2 tr:last-child{
+border-top:solid 1px;
+    border-color:#31B6BA;
+    font-weight:bold;
+}
+
+.frmInput2 th{
+    text-align:left;
+}
+
+.frmInput2 tr:last-child td:nth-child(1){
+    text-align:right;
+}
+
+.frmInput2 td,.frmInput2 th{
+    padding:10px;
+}
+
+
+/* ------------------ CSS beriNilai -------------------- */
+
+/*.beriNilai div:nth-child(1) div:nth-child(1) {
+    margin-top:20px;
+}*/
+
+.beriNilai div:nth-child(1) label {     
+    background-image: url('../img/coin-total.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    display: block;
+    margin: 0 auto;
+    margin-top:10px;
+    width:45%;
+    height:50px;
+    color:#009344;
+    text-align:right; 
+    padding-top:3px;  
+    padding-right:10px;
+    font-size:x-large;
+    font-weight:bolder;    
+}
+
+.beriNilai div:nth-child(2){
+    height:90%;
+}
+
+.beriNilai div:nth-child(2) img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* ------------------ Custom Modal -------------------- */
+.customModal img{
+width:30%;
+padding:20px;
+}
+
+/* ------------------ Setting Bluetooth -------------------- */
+.settingBluetooth{
+    text-align:center;
+}
+.settingBluetooth label{
+    color:white;
+    padding:10px;
+}
+
+/*--Test--*/
+.tabung > div {
+    height: 90%;
+    position: relative;
+
+}
+
+.tabung label {
+     background-image: url('../img/coin-total.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    display: block;
+    margin: 0 auto;
+    margin-top:10px;
+    width:45%;
+    height:50px;
+    color:#009344;
+    text-align:right; 
+    padding-top:3px;  
+    padding-right:10px;
+    font-size:x-large;
+    font-weight:bolder; 
+}
+
+.tabung a{
+    font-size:80px;
+    display: block;
+    position:absolute;
+    
+}
+
+.uang {    
+    position: absolute;
+    margin: auto;  
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    width:25%;}
+
+.uangBefore {    
+    position: absolute;
+    margin: auto;  
+    left: 0;
+    bottom: 50px;
+    width:25%;}
+
+.uangAfter {    
+    position: absolute;
+    margin: auto;  
+    right: 0;
+    bottom: 50px;
+    width:25%;}
+
+.uangLogam {
+    display: block;
+    width: 40%;
+    height:25%;
+    position:absolute;
+}
+
+.uangKertas {
+    display: block;
+    width: 40%;
+    height:50%;
+    position:absolute;
+}
+
+.celenganV {
+   position: absolute;
+    margin: auto;  
+    left: 0;
+    right: 0;
+    top: 150px;
+    width:40%;
+    z-index:100;
+}
+/*---------------Radio Button---------------*/
+input[type=radio] {
+  /* Hide original inputs */
+  visibility: hidden;
+  position: absolute;
+
+}
+
+input[type=radio] + label:before{
+  height:20px;
+  width:20px;
+  margin-bottom:5px;
+  margin-right: 5px;
+  content: " ";
+  display:inline-block;
+  vertical-align: middle;
+  border:1px solid #A7DCDF;
+}
+
+
+input[type=radio]:checked + label:before{
+  background:#A7DCDF;
+ 
+}
+
+/* CUSTOM RADIO AND CHECKBOX STYLES */
+input[type=radio] + label:before{
+  border-radius:50%;
+}
+
+
