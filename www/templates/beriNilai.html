@@ -1,0 +1,61 @@
+﻿<ion-view cache-view="false" title="Beri Nilai">
+    <ion-content class="tabung" scroll="false">
+            <label>{{uang.total | customCurrency:"":",":".":0:false}}</label>   
+        <!--<img class="celenganV" src="img/kepalabadak.png"/>
+        <a panahkiri class="button-icon ion-ios-arrow-left light"></a>
+        <a panahkanan class="button-icon ion-ios-arrow-right light"></a>-->
+            <ion-slide-box show-pager="false" does-continue="true" on-slide-changed="slideChanged($index)">
+                <ion-slide ng-repeat="s in [1,2,3,4,5,6,7]">                  
+                    <img class="uang" id="{{'duit' + s}}" ng-src="img/duit-{{s}}.png" on-swipe-up="saveMoney(s)" ng-show="showMoney">
+                </ion-slide>
+             </ion-slide-box>
+               </ion-content>
+</ion-view>
+
+<!--<ion-view cache-view="false" title="Beri Nilai">
+    <ion-content class="tabung" scroll="false">
+        <label>{{uang.total}}</label>
+        <a panahkiri class="button-icon ion-ios-arrow-left light"></a>
+        <a panahkanan class="button-icon ion-ios-arrow-right light"></a>
+        <ion-slide-box does-continue="true" on-slide-changed="slideHasChanged($index)" show-pager="false">
+            <ion-slide>
+                <img draggable class="uangLogam" src="img/duit-1.png" on-swipe-up="SaveMoney(1)" ng-show="showMoney"/>
+            </ion-slide>
+            <ion-slide>
+                <img draggable class="uangLogam" src="img/duit-2.png" on-swipe-up="SaveMoney(2)" ng-show="showMoney"/>
+            </ion-slide>
+            <ion-slide>
+                <img draggable class="uangKertas" src="img/duit-3.png" on-swipe-up="SaveMoney(3)" ng-show="showMoney"/>
+            </ion-slide>
+            <ion-slide>
+                <img draggable class="uangKertas" src="img/duit-4.png" on-swipe-up="SaveMoney(4)" ng-show="showMoney"/>
+            </ion-slide>
+            <ion-slide>
+                <img draggable class="uangKertas" src="img/duit-5.png" on-swipe-up="SaveMoney(5)" ng-show="showMoney"/>
+            </ion-slide>
+        </ion-slide-box>
+
+    </ion-content>
+</ion-view>-->
+
+<!--<ion-view cache-view="false" title="Beri Nilai">
+    <ion-content class="beriNilai" scroll="false">
+        <div>
+            <label>{{uang.total | customCurrency:"":",":".":0:false}}</label>
+        </div>
+        <div>-->
+            <!--<ks-swiper-container initial-slide="4" speed="2000" loop="true" show-nav-buttons="false" slides-per-view="3" space-between="10" pagination-clickable="false" override-parameters="{effect: 'coverflow',coverflow: {rotate: 50,stretch: 0,depth: 100,modifier: 1,slideShadows : false}}" on-ready="onReadySwiper(swiper)">
+                <ks-swiper-slide draggable class="swiper-slide" ng-repeat="s in [1,2,3]">
+                    <img ng-src="img/duit-{{s}}.png" on-swipe-up="SaveMoney(s)">
+                </ks-swiper-slide>
+            </ks-swiper-container>-->
+
+            <!--<ks-swiper-container style="position:fixed;width:135%;height:100%;left:-60px" initial-slide="9" speed="2000" loop="true" show-nav-buttons="false" slides-per-view="1" space-between="40" pagination-clickable="true" on-ready="onReadySwiper(swiper)">
+                <ks-swiper-slide class="swiper-slide" ng-repeat="s in [1,2,3,4,5,6,7]">
+                    <img draggable ng-src="img/duit-{{s}}.png"  id="{{'duit' + s}}" on-swipe-up="saveMoney(s)" ng-show="showMoney">
+                </ks-swiper-slide>
+            </ks-swiper-container>
+        </div>
+
+    </ion-content>
+</ion-view>-->

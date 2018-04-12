@@ -1,0 +1,53 @@
+﻿<ion-view cache-view="false">
+    <ion-nav-title>Riwayat Transaksi</ion-nav-title>
+
+    <ion-content class="frmInput2">
+        <div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Nama Anak</span><br />
+                <select name="nama" ng-model="riwayat.nama" ng-options="anak.value as anak.text for anak in listAnak" required></select>
+                <!--<span ng-show="frmAdd.nilai.$dirty && frmAdd.nilai.$invalid">
+            <span ng-show="frmAdd.nilai.$error.required">*is required.</span>
+        </span>-->
+            </label>
+
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Tanggal</span>
+                <input name="jatuhTempo" type="date" ng-model="riwayat.tanggal" placeholder="mm/dd/yyyy">
+            </label>
+
+            <button class="button icon-right ion-ios-arrow-forward" ng-click="search()">
+                SEARCH
+            </button>
+            <br />
+            <table>
+                <tr>
+                    <th>Pekerjaan</th>
+                    <th>Nominal</th>
+                </tr>
+                <tr>
+                    <td>Mengerjakan PR</td>
+                    <td>Rp. 2.000</td>
+                </tr>
+                <tr>
+                    <td>Tidur tepat waktu</td>
+                    <td>Rp. 5.000</td>
+                </tr>
+                <tr>
+                    <td>Menyapu</td>
+                    <td>Rp. 5.000</td>
+                </tr>
+                <tr>
+                    <td>Cuci piring</td>
+                    <td>Rp. 10.000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rp. 22.000</td>
+                </tr>
+            </table>
+        </div>
+        
+
+    </ion-content>
+</ion-view>

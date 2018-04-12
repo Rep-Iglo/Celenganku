@@ -1,0 +1,10 @@
+﻿<ion-modal-view>
+    <ion-header-bar class="headerjudul">
+        <p>Select Icon</p>
+    </ion-header-bar>
+    <ion-content class="customModal">
+        <a class="button-clear" ng-repeat="s in [1,2,3,4]">
+            <img  ng-src="img/icon-{{s}}.png" ng-click="savePath(s)">
+        </a>
+    </ion-content>
+</ion-modal-view>

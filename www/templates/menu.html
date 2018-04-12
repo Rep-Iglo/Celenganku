@@ -1,0 +1,57 @@
+﻿<ion-side-menus>
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+            <!--<ion-nav-buttons side="right">
+                <img src="img/Slicing-BNI-putih-low.png" style="height:60%; margin-top:5px;"/>
+             </ion-nav-buttons>-->
+
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" class="sidemenucontent sidemenu">
+
+        <ion-content>
+            <div class="sideprofile"  menu-close ui-sref="app.profile">
+                <div class="fotoprofile">
+                    <img ng-src="{{profilePath}}">
+                </div>
+                <div class="infoprofile">
+                    <p class="namaprofile">{{fullname}}</p>
+                </div>
+            </div>
+            <ion-list>
+
+                <ion-item class="item-icon-left" menu-close ui-sref="app.daftarKerja">
+                    <i class="icon ion-clipboard"></i>Daftar Pekerjaan
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close ui-sref="app.listKerja">
+                    <i class="icon ion-cash"></i>Transfer Dana
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close ui-sref="app.riwayat">
+                    <i class="icon ion-archive"></i>Riwayat Transaksi
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close ui-sref="app.settingBluetooth">
+                    <i class="icon ion-bluetooth"></i>Setting Bluetooth
+                </ion-item>
+               
+                <ion-item class="item-icon-left" menu-close ng-hide="isLogin" ui-sref="app.login">
+                    <i class="icon ion-log-in"></i>Login
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close ng-show="isLogin" ng-click="logout()">
+                    <i class="icon ion-log-out"></i>Logout
+                </ion-item>
+                
+                <!--<ion-item class="item-icon-left" menu-close ng-click="ClearData()">
+                    <i class="icon ion-trash-b"></i>Clear Data
+                </ion-item>-->
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,43 @@
+﻿<ion-view>
+    <ion-nav-title>Tambah/Edit Rekening</ion-nav-title>
+    <ion-content class="frmInput2">
+        <div class="list">
+        <form name="frmAdd">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">No Rekening</span>
+                <input name="NoRek" type="text" ng-model="rekening.noRek" placeholder="No Rekening" required>
+                <span ng-show="frmAdd.NoRek.$dirty && frmAdd.NoRek.$invalid">
+                    <span ng-show="frmAdd.NoRek.$error.required">*is required.</span>
+                </span>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Nama</span>
+                <input name="Nama" type="text" ng-model="rekening.nama" placeholder="Nama" required>
+                <span ng-show="frmAdd.Nama.$dirty && frmAdd.Nama.$invalid">
+                    <span ng-show="frmAdd.Nama.$error.required">*is required.</span>
+                </span>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Pemilik</span><br />
+                <input type="radio" name="pemilik" id="r1" value="Orang Tua" ng-model="rekening.pemilik"><label for="r1">Orang Tua</label>
+                <input type="radio" name="pemilik" id="r2" value="Anak" ng-model="rekening.pemilik"><label for="r2">Anak</label>
+            </label>
+            
+            <label class="item item-input item-stacked-label" ng-show="rekening.pemilik=='Anak'">
+                <span class="input-label">Target</span>
+                <input name="Target" type="text" ng-model="rekening.target" ng-currency currency-symbol="Rp.">                
+            </label>
+            <label class="item item-input item-stacked-label" ng-show="rekening.pemilik=='Anak'">
+                <span class="input-label">Jatuh Tempo</span>
+                <input name="jatuhTempo" type="date" ng-model="rekening.jatuhTempo" placeholder="mm/dd/yyyy">                
+            </label>
+            <br />
+            <button ng-disabled="frmAdd.NoRek.$dirty && frmAdd.NoRek.$invalid ||frmAdd.Nama.$dirty && frmAdd.Nama.$invalid"
+                    class="button icon-right ion-ios-arrow-forward" ng-click="save()">
+                SAVE
+            </button>
+        </form>
+        </div>
+    </ion-content>
+
+</ion-view>

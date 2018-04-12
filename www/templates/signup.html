@@ -1,0 +1,58 @@
+﻿<ion-view  view-title="Sign Up">
+    <!--<ion-header-bar class="headerjudul"><p>Sign Up</p></ion-header-bar>-->
+    <ion-content class="frmInput2 has-header">
+        <div>
+            <form name="signform">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Full Name</span>
+                    <input name="fullname" type="text" ng-model="user.fullname" placeholder="Full Name" required>
+                    <span ng-show="signform.fullname.$dirty && signform.fullname.$invalid">
+                        <span ng-show="signform.fullname.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Username</span>
+                    <input name="username" type="text" ng-model="user.username" placeholder="Username" required>
+                    <span ng-show="signform.username.$dirty && signform.username.$invalid">
+                        <span ng-show="signform.username.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Email</span>
+                    <input name="email" type="email" ng-model="user.email" placeholder="Email" required>
+                    <span ng-show="signform.email.$dirty && signform.email.$invalid">
+                        <span ng-show="signform.email.$error.required">Email is required.</span>
+                        <span ng-show="signform.email.$error.email">Invalid email address.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input name="password" type="number" style="-webkit-text-security:disc;"  ng-model="user.password" placeholder="Password" required>
+                    <span ng-show="signform.password.$dirty && signform.password.$invalid">
+                        <span ng-show="signform.password.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Confirm Password</span>
+                    <input name="password" type="number" style="-webkit-text-security:disc;" ng-model="user.confpass" placeholder="Confirm Password" required>       
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">PIN</span>
+                    <input name="pin" type="number" style="-webkit-text-security:disc;" ng-model="user.pin" placeholder="PIN" required>
+                    <span ng-show="signform.pin.$dirty && signform.pin.$invalid">
+                        <span ng-show="signform.pin.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Confirm PIN</span>
+                    <input name="confpin" type="tel" style="-webkit-text-security:disc;" ng-model="user.confpin" placeholder="Confrim PIN" required>
+                </label>
+                <button ng-disabled="signform.fullname.$dirty && signform.fullname.$invalid ||signform.username.$dirty && signform.username.$invalid ||
+            signform.email.$dirty && signform.email.$invalid ||signform.password.$dirty && signform.password.$invalid ||signform.pin.$dirty && signform.pin.$invalid" class="button icon-right ion-chevron-right" ng-click="submit()">
+                    SUBMIT
+                </button>
+            </form>
+        </div>
+    </ion-content>
+
+</ion-view>

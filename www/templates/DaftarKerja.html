@@ -1,0 +1,59 @@
+﻿<ion-view cache-view="false" ng-init="showAds()">
+    <ion-nav-title>Daftar Kerja</ion-nav-title>
+
+    <ion-content class="listKerja" delegate-handle="scroller" elastic-header="elastic-header" overflow-scroll="false">
+        <div>
+            <ion-list>
+                <ion-item ng-repeat="job in jobs" class="item item-thumbnail-left"  ng-if="$index < 5">
+                    <img ng-src="{{job.iconPath}}" />
+                    <h2>{{job.pekerjaan}}</h2>
+                    <h3>Rp.{{job.nilai}},-</h3>
+                    <ion-option-button class="button-info" ng-click="editKerja($index)">
+                        Edit
+                    </ion-option-button>
+                    <ion-option-button class="button-positive" ng-click="deleteKerja($index)">
+                        Delete
+                    </ion-option-button>
+
+                </ion-item>
+                <img src="img/background-1.jpg" alt="" du-parallax y="background">
+                <ion-item ng-repeat="job in jobs" class="item item-thumbnail-left" ng-if="$index > 5">
+                    <img ng-src="{{job.iconPath}}" />
+                    <h2>{{job.pekerjaan}}</h2>
+                    <h3>Rp.{{job.nilai}},-</h3>
+                    <ion-option-button class="button-info" ng-click="editKerja($index)">
+                        Edit
+                    </ion-option-button>
+                    <ion-option-button class="button-positive" ng-click="deleteKerja($index)">
+                        Delete
+                    </ion-option-button>
+
+                </ion-item>
+            </ion-list>
+        </div>
+            <!--<div id="elastic-header" class="background-image"></div>
+        
+        <div class="content">
+            <ion-list>
+                <ion-item ng-repeat="job in jobs" class="item item-thumbnail-left">
+                    <img ng-src="{{job.iconPath}}" />
+                    <h2>{{job.pekerjaan}}</h2>
+                    <h3>Rp.{{job.nilai}},-</h3>
+                    <ion-option-button class="icon ion-edit button-dark" ng-click="editKerja($index)">
+                    </ion-option-button>
+                    <ion-option-button class="icon ion-trash-b button-assertive" ng-click="deleteKerja($index)">
+                    </ion-option-button>
+                    
+                </ion-item>
+                </ion-list>
+
+</div>-->
+        
+    </ion-content>
+    <ion-footer-bar ng-click="addKerja()" class="listKerja-footer">
+        <a class="button icon-right ion-plus">Tambah Pekerjaan</a>
+    </ion-footer-bar>
+    <!--<div class="buttonAdd">
+        <i class="button-icon icon ion-plus-circled" ng-click="addKerja()"></i>
+    </div>-->
+</ion-view>

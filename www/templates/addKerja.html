@@ -1,0 +1,34 @@
+﻿<ion-view>
+    <ion-nav-title>Tambah Pekerjaan</ion-nav-title>
+    <ion-content class="frmInput2">
+        <div>
+            <form name="frmAdd">              
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Pekerjaan</span>
+                    <input name="kerja" type="text" ng-model="add.pekerjaan" placeholder="Pekerjaan" required>
+                    <span ng-show="frmAdd.kerja.$dirty && frmAdd.kerja.$invalid">
+                        <span ng-show="frmAdd.kerja.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Nilai</span><br />
+                    <select name="nilai" ng-model="add.nilai" ng-options="nilai.value as nilai.text for nilai in listNilai" required></select>
+                    <!--<span ng-show="frmAdd.nilai.$dirty && frmAdd.nilai.$invalid">
+                        <span ng-show="frmAdd.nilai.$error.required">*is required.</span>
+                    </span>-->
+                </label>
+                <div>
+                    <label>Icon</label>
+                    <img class="button-clear" ng-src="{{add.iconPath}}" ng-click="openModal()" />
+                </div>
+
+                <button ng-disabled="frmAdd.kerja.$dirty && frmAdd.kerja.$invalid ||frmAdd.kerja.$dirty && frmAdd.kerja.$invalid ||
+            signform.email.$dirty && signform.email.$invalid ||signform.password.$dirty && signform.password.$invalid ||signform.pin.$dirty && signform.pin.$invalid"
+                        class="button icon-right ion-ios-arrow-forward" ng-click="save()">
+                    SAVE
+                </button>
+            </form>
+        </div>
+    </ion-content>
+
+</ion-view>

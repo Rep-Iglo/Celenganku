@@ -1,0 +1,30 @@
+﻿<ion-view cache-view="false">
+    <ion-nav-title>Transfer</ion-nav-title>
+    <ion-content class="frmInput2">
+        <div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Nominal Transfer</span>
+                <input name="pass" type="text" value="Rp.{{uang.nilai}},-" disabled required>          
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Rek Asal</span><br />
+                <select ng-model="uang.rekeningAsal" required>
+                    <option value="226536046">226536046</option>
+                    <option value="317002329">317002329</option>
+                </select>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Rek Tujuan</span><br />
+                <select ng-model="uang.rekeningTujuan" required>
+                    <option value="226483718">226483718</option>
+                    <option value="317002341">317002341</option>
+                </select>
+            </label>
+            
+            <button class="button icon-right ion-ios-arrow-forward" ng-click="inputPin()">
+                OK
+            </button>
+        </div>
+    </ion-content>
+
+</ion-view>

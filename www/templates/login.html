@@ -1,0 +1,36 @@
+﻿<ion-view cache-view="false" hide-nav-bar="true">
+    <!--<ion-header-bar class="headerjudul"><p>Login</p></ion-header-bar>-->
+    <ion-nav-title>Login</ion-nav-title>
+    <ion-content class="login">    
+        <div>
+            <img src="img/LOGO.png">
+        </div>
+        <div>
+                <label class="item item-input">
+                    <i><img src="img/username-login.png" /></i>
+                    <input type="text" placeholder="Username" ng-model="user.username">
+                </label>
+                <label class="item item-input">
+                    <i><img src="img/password-login.png" /></i>
+                    <input type="tel" placeholder="Password" pattern="[0-9]*" inputmode="numeric"  style="-webkit-text-security:disc;" ng-model="user.password">
+                   
+                </label>
+                <br />
+                <table>
+                    <tr>
+                        <td>
+                            <button class="button icon-right ion-ios-arrow-forward" ng-click="login()">LOGIN</button>
+                        </td>
+                        <td>
+                            <button class="button icon-right ion-ios-arrow-forward" ui-sref="app.signup">SIGN UP</button>
+                        </td>
+                    </tr>
+                </table>
+                <p>Lupa Password ? <a href="#">Klik disini</a></p>
+            
+        </div>
+        <ion-footer-bar class="footerbar">
+            <p>Version 1.0.1</p>
+        </ion-footer-bar>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+﻿<ion-view view-title="Edit Profile" cache-view="false">
+    <ion-content class="profile">
+        <div>
+            <img ng-src="{{profilePath}}">
+        </div>
+        <div >
+            <a ng-click="changePhoto()"><u>Ganti Foto</u></a>
+        </div>
+        <div>
+            <label class="item item-input" ng-click="editname()">
+                <img src="img/username-profile.png" />
+                <!--<input type="text" placeholder="Username" ng-model="user.username" style="padding-right:10px;padding-left:18px;color:white;">-->
+                <label >{{fullname}}</label>
+                <img src="img/edit-profile.png" class="img2"/>
+            </label>
+        </div>
+        <div>
+            <a class="button icon-right ion-ios-arrow-forward" ui-sref="app.changePassword">Ganti Password</a>
+            <a class="button icon-right ion-ios-arrow-forward" ui-sref="app.changePIN">Ganti PIN</a>        
+            <a class="button icon-right ion-ios-arrow-forward" ui-sref="app.listAccount">Daftar Rekening</a>  
+        </div>
+    </ion-content>
+</ion-view>

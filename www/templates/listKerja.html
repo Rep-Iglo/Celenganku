@@ -1,0 +1,24 @@
+﻿<ion-view cache-view="false">
+    <ion-nav-title>Daftar Kerja</ion-nav-title>
+    
+        <ion-content class="listKerja" delegate-handle="scroller" elastic-header="elastic-header" overflow-scroll="false">
+            
+            <div id="elastic-header" class="background-image" ></div>
+
+            <div class="content">
+                <!--<div class="padding">
+                    <h1>Elastic header</h1>
+                    <p>An Ionic/Angular directive for elastic headers. This implementation causes no browser repaints with silky smooth 60fps as a result.</p>
+                </div>-->
+
+                <div class="list">
+                    <a class="item item-thumbnail-left" ng-repeat="job in jobs" ng-click="goTo($index)">
+                        <img ng-src="{{job.iconPath}}" />
+                        <h2>{{job.pekerjaan}}</h2>
+                        <h3>Rp.{{job.nilai}},-</h3>
+                    </a>
+                </div>
+        </div>
+        </ion-content>
+    
+</ion-view>

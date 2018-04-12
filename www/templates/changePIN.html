@@ -1,0 +1,37 @@
+﻿<ion-view  view-title="Change PIN">
+    <!--<ion-header-bar class="headerjudul"><p>Change PIN</p></ion-header-bar>-->
+
+    <ion-content class="frmInput2">
+        <div class="list">
+            <form name="cpform">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Current PIN</span>
+                    <input name="pin" type="tel"  style="-webkit-text-security:disc;" ng-model="change.pin" placeholder="Current PIN" required>
+                    <span ng-show="cpform.pin.$dirty && cpform.pin.$invalid">
+                        <span ng-show="cpform.pin.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">New PIN</span>
+                    <input name="newPin" type="tel"  style="-webkit-text-security:disc;" ng-model="change.newpass" placeholder="New PIN" required>
+                    <span ng-show="cpform.newPin.$dirty && cpform.newPin.$invalid">
+                        <span ng-show="cpform.newPin.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Confirm PIN</span>
+                    <input name="confPin" type="tel"  style="-webkit-text-security:disc;" ng-model="change.confpass" placeholder="Confirm PIN" required>
+                    <span ng-show="cpform.confPin.$dirty && cpform.confPin.$invalid">
+                        <span ng-show="cpform.confPin.$error.required">*is required.</span>
+                    </span>
+                </label>
+                <br />
+                <button ng-disabled="cpform.pin.$dirty && cpform.pin.$invalid ||cpform.newpin.$dirty && cpform.newpin.$invalid || cpform.confpin.$dirty && cpform.confpin.$invalid"
+                        class="button icon-right ion-ios-arrow-forward" ng-click="save()">
+                    SAVE
+                </button>
+            </form>
+        </div>
+    </ion-content>
+
+</ion-view>

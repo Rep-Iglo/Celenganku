@@ -1,0 +1,28 @@
+﻿<ion-view>
+    <ion-nav-title>Bluetooth</ion-nav-title>
+    <ion-content class="settingBluetooth">
+        <ion-refresher pulling-text="Pull to refresh..."
+                       on-refresh="onRefresh()">
+        </ion-refresher>
+        <div>
+            <label>Pull to refresh</label>
+        </div>
+        <div><label>Paired Devices</label></div>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="device in devices" type="item-text-wrap" href="#/app/settingBluetooth/{{device.address}}">
+                <h2>{{device.name}}</h2>
+                <p>ID: {{device.id}} <br /> address: {{device.address}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+        <br />
+        <div><label>Available Devices</label></div>
+        <ion-list>
+            <ion-item class="item-icon-right" ng-repeat="unpaired in unpairedDevices" type="item-text-wrap" href="#/app/settingBluetooth/{{device.address}}">
+                <h2>{{unpaired.name}}</h2>
+                <p>ID: {{unpaired.id}} <br /> address: {{unpaired.address}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
